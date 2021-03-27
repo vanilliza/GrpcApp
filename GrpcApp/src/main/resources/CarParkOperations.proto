@@ -17,6 +17,7 @@ int32 carPark_id = 1;
 string status =2;
 string location =3;
 
+
 }
 
 message carparkRequest{

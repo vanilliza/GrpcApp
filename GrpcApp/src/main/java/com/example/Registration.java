@@ -19,8 +19,14 @@ public static void main(String[] args) throws InterruptedException {
                     "path=index.html");
             jmdns.registerService(serviceInfo);
             System.out.println("Registration Service Start ! ");
+            System.out.println("This is for Github");
         } catch (IOException e) {
             System.out.println(e.getMessage());
+
+
+
+
+
         }
     }
 }
