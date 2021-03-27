@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package com.example;
+
+option java_package = "com.example.utils.generated.lights";
+option java_multiple_files = true;
+
+service LightsService{
+
+  rpc showStatus(light_status_request) returns (lightStatusResponse) {};
+  rpc lightsOn(lightToUpdateRequest) returns (lightDetailResponse) {};
+  rpc lightsOff(lightToUpdateRequest) returns (lightDetailResponse) {};
+}
+
+message Lights{
+  int32 light_id = 1;
+  string light_location = 2;
+  string light_status = 3;
+}
+
+message light_status_request{
+  int32 light_id = 1;
+}
+
+message lightToUpdateRequest{
+  int32 light_id = 1;
+
+}
+
+message lightStatusResponse{
+  Lights lights = 1;
+}
+
+message lightDetailResponse{
+  Lights lights = 1;
+}
