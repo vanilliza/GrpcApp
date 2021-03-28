@@ -1,4 +1,4 @@
-package com.example.lights;
+package com.example.utils.fakeData;
 
 import com.example.utils.generated.lights.Lights;
 

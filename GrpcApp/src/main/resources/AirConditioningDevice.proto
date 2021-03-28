@@ -12,8 +12,6 @@ rpc setTemp(TempRequest ) returns (ACResponse) {};
 rpc setOff(deviceIDRequest) returns (ACResponse) {};
 rpc setOn(deviceIDRequest) returns (ACResponse) {};
 
-
-
 }
 
 message AirConditioning{

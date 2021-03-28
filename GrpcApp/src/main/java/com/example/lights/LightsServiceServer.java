@@ -1,5 +1,6 @@
 package com.example.lights;
 
+import com.example.utils.fakeData.LightData;
 import com.example.utils.generated.lights.*;
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
